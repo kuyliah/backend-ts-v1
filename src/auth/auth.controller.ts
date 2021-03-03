@@ -18,6 +18,7 @@ export class AuthController {
     const payload: Payload = {
       email: user.email,
       matriculant: user.matriculant,
+      fullname: user.fullname
     };
     const token = await this.authService.signPayload(payload);
     return { user, token };
@@ -29,6 +30,7 @@ export class AuthController {
     const payload: Payload = {
       email: user.email,
       matriculant: user.matriculant,
+      fullname: user.fullname
     };
     const token = await this.authService.signPayload(payload);
     return { user, token };

@@ -3,4 +3,5 @@ export interface Payload {
     matriculant: boolean;
     iat?: number;
     expiresIn?: string;
+    fullname: string;
   }
